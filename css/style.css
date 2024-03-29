@@ -1,0 +1,142 @@
+
+:root{
+    --colorred:#f15f5d;
+    --colorgreen:#4db748;
+    --coloryellow:#febe2e;
+    --brown:#f0d0b5c3;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: #f7ecde; */
+  background-color: var(--brown);
+}
+
+.fs{
+    font-size: 19px;
+}
+
+.head h1 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  color: rgb(53, 46, 40);
+}
+
+.head h3 {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.btn-brown{
+  background-color: #b67e50d7 !important;
+  color: white !important;
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+}
+
+.btn-brown:hover{
+  background-color: #a05037eb!important;
+}
+
+.head h1::after {
+  content: "";
+  position: absolute;
+  bottom: 0%;
+  left: 36%;
+  width: 27%;
+  height: 20px;
+  z-index: -1;
+  /* background-color: #fec160cf; */
+  background-color: #b67e50c3;
+  transition: height 0.5s ease-in;
+  -webkit-transition: height 0.5s ease-in;
+  -moz-transition: height 0.5s ease-in;
+  -ms-transition: height 0.5s ease-in;
+  -o-transition: height 0.5s ease-in;
+}
+
+.head h1:hover::after {
+  height: 40px;
+}
+
+.fa-xmark:hover{
+    color: var(--colorred);
+}
+
+/* .h3-color {
+  color: var(--colorgreen);
+} */
+
+.form-control:focus{
+    box-shadow:0 0 0 0.25rem #fec160a2;
+}
+
+
+    
+table{
+    background-image: url(../imgs/photo-1509114397022-ed747cca3f65.avif);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.teal , .teal:hover{
+    background-color: #9eb23b;
+    color: white;
+}
+
+
+
+.black{
+    background-color: rgba(0, 0, 0, 0.326);
+    height: 150vh;
+}
+
+.white{
+    width: 500px;
+    height: 50vh;
+    background-color: white;
+    top: 15%;
+    left: 30%;
+}
+
+.circle-1{
+    width: 20px;
+    height: 20px;
+  background-color:  var(--colorred);
+
+}
+
+.circle-2{
+    width: 20px;
+    height: 20px;
+  background-color:  var(--coloryellow);
+
+}
+
+.circle-3{
+    width: 20px;
+    height: 20px;
+  background-color:  var(--colorgreen);
+
+}
+
+
+
+
+
+

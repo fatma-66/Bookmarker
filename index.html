@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="imgs/bookmark.png" />
+    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 py-5">
+          <div class="head text-center mt-3">
+            <h1 class="position-relative">
+              Bookmarker<span
+                ><i class="fa-solid fa-book-bookmark ms-1"></i
+              ></span>
+            </h1>
+            <br>
+            <br>
+
+            <!-- <h3 class="h4 py-5 h3-color">
+              <span><i class="fa-solid fa-bookmark h3-color"> </i> </span>
+              <span class="text-black">........Bookmark</span> your
+              <span
+                ><span class="text-black">favorite sites ........ </span
+                ><i class="fa-solid fa-bookmark h3-color"></i>
+              </span>
+            </h3> -->
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="container">
+        <div class="inputs py-3 d-flex flex-column">
+          <label for="input1" class="d-block py-2 fw-bold"
+            ><i class="fa-solid fa-book-bookmark me-2"></i>Site Name</label
+          >
+          <input
+            id="input1"
+            oninput="validateUrl(this)"
+            type="text"
+            class="form-control"
+            placeholder="Bookemark Name"
+          />
+
+          <label for="input2" class="d-block py-2 fw-bold mt-4"
+            ><i class="fa-solid fa-link me-2"></i>Site URL</label
+          >
+          <input
+            id="input2"
+            oninput="validateUrl(this)"
+            name="bookmark-name"
+            type="text"
+            class="form-control"
+            placeholder="Website URL"
+          />
+          <button
+            type="button"
+            class="btn btn-brown fw-semibold w-25 align-self-center mt-5 fs"
+            onclick="addBookMark()"
+          >
+            submit
+          </button>
+        </div>
+
+        <h3 class="h4 py-5 text-white">
+          <span></span
+          >_________________________________________________________________________________________________________<span
+          > </span>
+        </h3>
+      </div>
+      <div class="lists-of-bookmarks vh-100">
+        <div class="row gy-4" id="data"></div>
+
+        <div class="popup"></div>
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
